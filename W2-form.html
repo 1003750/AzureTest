@@ -7,7 +7,7 @@
 <body>
     <h2>Please fill in the form to evaluate our product</h2>
 
-    <form action="forminformation.php" method="get">
+    <form action="forminformation.php" method="post">
         <h3>Information about you:</h3>
         <input type="text" name="fname" placeholder="First name"><br>
         <input type="text" name="lname" placeholder="Last name"><br>
@@ -17,6 +17,9 @@
             <option value="UK">UK</option>
             <option value="nonUK">Outside UK</option>
         </select>
+        <br>
+        Birthday:
+        <input type="date" name="bday" placeholder="MM/DD/YYY">
         <H3>How would you rate the product?</H3>
         <p>Choose a mark from 1 (lowest) to 5 (highest)</p>
         <input type="radio" name="rating" value="1">
