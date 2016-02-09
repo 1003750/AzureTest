@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W2-form</title>
+</head>
+<body>
+    <h2>Please fill in the form to evaluate our product</h2>
+
+    <form action="forminformation.php" method="get">
+        <h3>Information about you:</h3>
+        <input type="text" name="fname" placeholder="First name"><br>
+        <input type="text" name="lname" placeholder="Last name"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <select name="location">
+            <option value="">Select location</option>
+            <option value="UK">UK</option>
+            <option value="nonUK">Outside UK</option>
+        </select>
+        <H3>How would you rate the product?</H3>
+        <p>Choose a mark from 1 (lowest) to 5 (highest)</p>
+        <input type="radio" name="rating" value="1">
+        1
+        <br>
+        <input type="radio" name="rating" value="2">
+        2
+        <br>
+        <input type="radio" name="rating" value="3">
+        3
+        <br>
+        <input type="radio" name="rating" value="4">
+        4
+        <br>
+        <input type="radio" name="rating" value="5">
+        5
+        <br>
+        <H3>What are your favorite features of the product?</H3>
+        <p>You cna choose as many as you would like and add additional comments of your own</p>
+        <input type="checkbox" name="texture" value="Texture">
+        Texture
+        <br>
+        <input type="checkbox" name="softness" value="Softness">
+        Softness
+        <br>
+        <input type="checkbox" name="colour" value="Colour">
+        Colour
+        <br>
+        <input type="checkbox" name="quality" value="Quality">
+        Quality
+        <br>
+        <input type="checkbox" name="value" value="Value">
+        Value
+        <br>
+        <input type="checkbox" name="other" value="Other">
+        Other, please fill in the comment box below
+        <br>
+        <input type="text" name="otherfeat" placeholder="Please leave a comment. It can be up to 500 characters long" maxlength="500" size="70">
+        <br><br>
+        <input type="submit" value="submit">
+
+            </form>
+
+</body>
+</html>
