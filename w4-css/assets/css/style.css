@@ -1,12 +1,21 @@
-body {
-    background-color: forestgreen;
-}
-
-h1, h2, h3 {
-    color: #83AF9B;
+* {
+    background-color: #E8DDCB;
     font-family: verdana;
 }
 
+h1, h2, h3 {
+    color: #033649;
+}
+
+p {
+    color: #036564;
+    text-align: justify;
+}
+
 img {
-    width: 500PX;
+    width: 300PX;
+}
+
+footer p::after {
+    content: " - styling edited by rita";
 }
