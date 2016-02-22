@@ -1,3 +1,7 @@
-*{
-    background-color: "#F9CDAD" ;
+body {
+    background-color: "#F9CDAD";
+}
+
+H1 {
+    color: "#83AF9B" ;
 }
