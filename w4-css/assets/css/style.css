@@ -3,5 +3,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: "#83AF9B" ;
+    color: "#83AF9B";
+    font-family: "verdana";
+    font-size: 18PX;
 }
