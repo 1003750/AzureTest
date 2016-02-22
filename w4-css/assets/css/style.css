@@ -1,8 +1,12 @@
 body {
-    background-color: darkseagreen;
+    background-color: forestgreen;
 }
 
 h1, h2, h3 {
-    color: forestgreenreen;
+    color: #83AF9B;
     font-family: verdana;
+}
+
+img {
+    width: 500PX;
 }
