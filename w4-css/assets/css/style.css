@@ -1,23 +1,26 @@
 * {
     background-color: #CDB380;
-    font-family: verdana;
 }
 
 header h1 {
     color: #033649;
+    font-family: 'Mr De Haviland', cursive;
 }
 
 main h2, h3 {
     color: #036564;
+    font-family: 'Mr De Haviland', cursive;
 }
 
 p {
     color: #036564;
     text-align: justify;
+    font-family: 'Mr De Haviland', cursive;
 }
 
 form {
     color: #036564;
+    font-family: 'Mr De Haviland', cursive;
 }
 
 img {
