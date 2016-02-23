@@ -1,10 +1,14 @@
 * {
-    background-color: #E8DDCB;
+    background-color: #CDB380;
     font-family: verdana;
 }
 
-h1, h2, h3 {
+header h1 {
     color: #033649;
+}
+
+main h2, h3 {
+    color: #036564;
 }
 
 p {
@@ -12,8 +16,24 @@ p {
     text-align: justify;
 }
 
+form {
+    color: #036564;
+}
+
 img {
-    width: 300PX;
+    width: 200PX;
+}
+
+A:link {
+    COLOR: #000000;
+}
+
+A:hover {
+    COLOR: #036564;
+}
+
+A:visited {
+    COLOR: #E8DDCB;
 }
 
 footer p::after {
