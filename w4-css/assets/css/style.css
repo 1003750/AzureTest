@@ -36,6 +36,10 @@ A:visited {
     COLOR: #E8DDCB;
 }
 
+A:active {
+    COLOR: #036564;
+}
+
 footer p::after {
     content: " - styling edited by rita";
 }
