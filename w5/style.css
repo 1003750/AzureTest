@@ -16,9 +16,7 @@ li a {
 }
 
 #logo {
-    img {
-        width: 240px;
-    }
+    width: 240px;
 }
 
 main {
@@ -45,11 +43,28 @@ p {
     font-weight: 400;
 }
 
-header {
+header{
 
 }
 
+#news {
+    width: 66%;
+}
+
+#LN {
+    background-color: #DBC9DF;
+    width: 33%;
+}
+
+#UE {
+    background-color: #782A7E;
+    width: 33%;
+}
+
+
+
 footer {
+    height: 300px;
     background-color: #363636;
     text-align: center;
     font-weight: bold;
