@@ -11,7 +11,7 @@ li {
 li a {
     display: inline-block;
     text-align: center;
-    padding: 30px 30px 30px 30px;
+    padding: 0 30px 30px 30px;
     text-decoration: none;
 }
 
@@ -51,14 +51,15 @@ header{
     width: 66%;
 }
 
+#side {
+    width: 33%;
+}
 #LN {
     background-color: #DBC9DF;
-    width: 33%;
 }
 
 #UE {
     background-color: #782A7E;
-    width: 33%;
 }
 
 
