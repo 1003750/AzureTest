@@ -1,3 +1,9 @@
+header{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -26,7 +32,7 @@ main {
     height: auto;
     display: flex;
     display: -webkit-flex /*Safari*/
-}
+        }
 
 #chrisinajayne {
     width: 250px;
@@ -41,35 +47,45 @@ h1, h2, h3 {
 p {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    text-align: justify;
 }
 
-header{
 
-}
 
-#news {
+.news {
     width: 66%;
+    padding: 0 5px 5px 5px;
 }
 
-#side {
+.side {
     width: 33%;
 }
 #LN {
+    padding: 0 5px 5px 5px;
     background-color: #DBC9DF;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 #UE {
+    padding: 0 5px 5px 5px;
     background-color: #782A7E;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 
 
 footer {
-    height: 300px;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 200px;
     background-color: #363636;
+    color: #FFFFFF;
     text-align: center;
     font-weight: bold;
-    color: #FFFFFF;
+
 
 
 
