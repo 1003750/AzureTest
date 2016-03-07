@@ -47,6 +47,7 @@ echo "<br>";
 echo "<br>";
 
 for ($i = 1; $i<30; $i++) {
+    echo "<br>";
     if ($i%2==0 && $i%3!=0 && $i%4!=0) {
         print "On the " . $i . " day of month only specs are available";
         echo "<br>";
@@ -71,7 +72,7 @@ for ($i = 1; $i<30; $i++) {
         print "On the " . $i . " day of month mugs and sausage rolls are available";
         echo "<br>";
     }
-        elseif ($i%2==0 && $i%3==0 && $i%4==0) {
+    elseif ($i%2==0 && $i%3==0 && $i%4==0) {
         print "On the " . $i . " day of month all items are available";
         echo "<br>";
     }
