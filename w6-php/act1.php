@@ -37,8 +37,6 @@ foreach ($provisionedActivities as $x) {
     if ($x=="Mugs"){
         $x="Hugs";
     }
-    print "<p> $x </p>";
-
     if ($x=="Sausage Rolls"){
         $x=null;
     }
