@@ -46,7 +46,7 @@ foreach ($provisionedActivities as $x) {
 echo "<br>";
 echo "<br>";
 
-for ($i = 1; $i<30; $i++) {
+for ($i = 1; $i<=30; $i++) {
     echo "<br>";
     if ($i%2==0 && $i%3!=0 && $i%4!=0) {
         print "On the " . $i . " day of month only specs are available";
