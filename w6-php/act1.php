@@ -12,4 +12,24 @@ elseif ($myname>=21) {
 else {
     print "You are not allowed to buy specs, mugs or sausage rolls";
 }
+
+
+$wantedgood = "mugs";
+
+switch($wantedgood) {
+    case "specs":
+        echo "you must be 16 to buy specs";
+        break;
+    case "mugs":
+        echo "you must be 18 to buy mugs";
+        break;
+    case "sausage rolls":
+        echo "you must be 21 to buy sausage rolls";
+        break;
+    default:
+        echo "You have not chosen a valid good";
+}
+
+
+
 ?>
