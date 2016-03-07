@@ -43,9 +43,42 @@ foreach ($provisionedActivities as $x) {
     print "<p> $x </p>";
 }
 
+echo "<br>";
+echo "<br>";
+
 for ($i = 1; $i<30; $i++) {
     if ($i%2==0 && $i%3!=0 && $i%4!=0) {
         print "On the " . $i . " day of month only specs are available";
+        echo "<br>";
+    }
+    elseif ($i%2!=0 && $i%3==0 && $i%4!=0) {
+        print "On the " . $i . " day of month only mugs are available";
+        echo "<br>";
+    }
+    elseif ($i%2!=0 && $i%3!=0 && $i%4==0){
+        print "On the " . $i . " day of month only sausage rolls are available";
+        echo "<br>";
+    }
+    elseif ($i%2==0 && $i%3==0 && $i%4!=0){
+        print "On the " . $i . " day of month specs and mugs are available";
+        echo "<br>";
+    }
+    elseif ($i%2==0 && $i%3!=0 && $i%4==0) {
+        print "On the " . $i . " day of month specs and sausage rolls are available";
+        echo "<br>";
+    }
+    elseif ($i%2!=0 && $i%3==0 && $i%4==0) {
+        print "On the " . $i . " day of month mugs and sausage rolls are available";
+        echo "<br>";
+    }
+        elseif ($i%2==0 && $i%3==0 && $i%4==0) {
+        print "On the " . $i . " day of month all items are available";
+        echo "<br>";
+    }
+
+
+    else {
+        print "On the " . $i . " mo  items are available";
     }
 
 }
