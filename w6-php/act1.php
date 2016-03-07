@@ -31,10 +31,18 @@ switch($wantedgood) {
         echo "You have not chosen a valid good";
 }
 
-$provisionedActivities = array("Specs", "Drugs", "Rock and Roll");
+$provisionedActivities = array("Specs", "Mugs", "Sausage Rolls");
 
 foreach ($provisionedActivities as $x) {
-    print "<p> $x </p>p>";
+    if ($x=="Mugs"){
+        $x="Hugs";
+    }
+    print "<p> $x </p>";
+
+    if ($x=="Sausage Rolls"){
+        $x=null;
+    }
+    print "<p> $x </p>";
 }
 
 
