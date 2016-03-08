@@ -5,5 +5,6 @@ rsort($nameList);
 $winSpecs = rand($nameList);
 strtoupper($winSpecs);
 echo $winSpecs;
+echo "test";
 
 ?>
