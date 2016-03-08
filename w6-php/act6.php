@@ -3,10 +3,8 @@
 $nameList = array(aa, bb, cc, dd, ee, ff, gg, hh, ii, jj, kk, ll, mm, nn, oo);
 rsort($nameList);
 $winningnumber = rand(1, 15);
-echo $winningnumber;
-$winSpecs = $nameList[$winningnumber];
-strtoupper($winSpecs);
+print "winner of all the specs is " . strtoupper($nameList[$winningnumber]);
+// $winSpecs = $nameList[$winningnumber];
 echo $winSpecs;
-echo "test";
 
 ?>
