@@ -6,6 +6,6 @@ $winningnumber = rand(0, 14);
 
 print "the winner of all the specs is " . strtoupper($nameList[$winningnumber]);
 
-unset ($nameList[$winnernumber]);
+unset ($nameList[$winningnumber]);
 printmyArray($nameList);
 ?>
