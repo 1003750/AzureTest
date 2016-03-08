@@ -11,6 +11,8 @@ E.g. if $wantedgood = “mugs” then the system would print “You have to be 1
  */
 
 $wantedgood = "mugs";
+$wantedgood = "specs";
+$wantedgood = "sausage rolls";
 
 switch ($wantedgood) {
     case "specs":
