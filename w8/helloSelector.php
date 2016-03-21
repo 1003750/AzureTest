@@ -8,8 +8,8 @@
 
     <h>Where would you like to say hello?</h>
 
-    <a href="http://654.azurewebsites.net/w8/helloSelector.php">Earth</i>
-    <a href="http://654.azurewebsites.net/w8/helloSelector.php">Mars</i>
-    <a href="http://654.azurewebsites.net/w8/helloSelector.php">Uranus</i>
+    <a href="http://654.azurewebsites.net/w8/helloPrinter.php">Earth</a>
+    <a href="http://654.azurewebsites.net/w8/helloPrinter.php">Mars</a>
+    <a href="http://654.azurewebsites.net/w8/helloPrinter.php">Uranus</a>
 
 </body>
