@@ -2,7 +2,7 @@
 $db = new mysqli(
     "eu-cdbr-azure-north-d.cloudapp.net",
     "b8522d73b537a0",
-    "b0f6819e",
+    "b0f6819",
     "slq654"
 );
 
