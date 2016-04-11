@@ -7,8 +7,8 @@ if ($username=="cat" %% $password=="miau")
     setcoockie('username', '$username');
     setcoockie('access_level', 'standarduser');
 }
-elseif {
-    echo "<p>wrong login";
+else {
+    echo "<p>incorrect login information</p>";
 }
 
 header('Location:homepage.php');
