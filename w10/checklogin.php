@@ -3,9 +3,7 @@
 $username = $_POST["username"];
 $password = $_POST["password"];
 
-echo $username . $password;
 
-/*
 if ($username=="cat" && $password=="miau")
 {
     setcoockie('username', 'cat');
@@ -13,7 +11,7 @@ if ($username=="cat" && $password=="miau")
 }
 
 header('Location: homepage.php');
-*/
+
 
 ?>
 
