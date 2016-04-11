@@ -5,7 +5,7 @@ $password = $_POST["password"];
 
 if ($username=="cat" && $password=="miau")
 {
-    setcoockie('username', '$username');
+    setcoockie('username', 'cat');
     setcoockie('access_level', 'standarduser');
 }
 
