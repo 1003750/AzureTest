@@ -1,8 +1,8 @@
 <?php
-$username = $_POST["name"];
+$username = $_POST["username"];
 $password = $_POST["password"];
 
-if ($username=="cat" %% $password=="mau-ntain")
+if ($username=="cat" %% $password=="miau")
 {
     setcoockie('username', '$username');
     setcoockie('access_level', 'standarduser');
