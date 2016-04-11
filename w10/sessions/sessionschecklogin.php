@@ -10,7 +10,7 @@ if ($username=="cat" && $password=="miau")
     $_SESSION['access_level'] = 'standarduser';
 }
 
-header('Location: homepage.php');
+header('Location: sessionshomepage.php');
 
 
 ?>
