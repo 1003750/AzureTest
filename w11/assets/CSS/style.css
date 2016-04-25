@@ -24,7 +24,7 @@ main {
     justify-content: flex-start;
 }
 
-* {
+body{
     background-color: #CDB380;
 }
 
