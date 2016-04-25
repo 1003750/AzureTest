@@ -24,6 +24,10 @@ main {
 
 /* NAVIGATION BAR CSS */
 /*removes bullet points*/
+#navigation
+{
+    background-color: blue;
+}
 nav>ul {
     list-style-type: none;
     margin: 0;
@@ -36,7 +40,7 @@ nav>ul>li {
 }
 
 li a:hover{
-    colour: purple;
+    color: purple;
 }
 
 /* IMAGE SIZING CSS */
@@ -58,9 +62,24 @@ p, h2, a{
 
 #content
 {
-/*    padding-top: 10px;
+    padding-top: 10px;
     padidng-left: 10px;
-    padding-right: 10px; */
+    padding-right: 10px;
     text-align: justify;
+    background-color: royalblue;
 }
 
+
+/* FONT SIZING */
+h1 {
+    font-size: 20px;
+}
+h2 {
+    font-size: 18px;
+}
+h1 {
+    font-size: 14px;
+}
+h1 {
+    font-size: 14px;
+}
