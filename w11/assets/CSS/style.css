@@ -4,6 +4,13 @@ body{
     margin-right: auto;
 }
 
+.header img {
+    float: left;
+}
+.header h1, h2 {
+    position: relative;
+}
+
 main {
     display: flex;
     display: -webkit-flex /*Safari*/
@@ -51,9 +58,9 @@ p, h2, a{
 
 #content
 {
-    padding-top: 10px;
+/*    padding-top: 10px;
     padidng-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px; */
     text-align: justify;
 }
 
