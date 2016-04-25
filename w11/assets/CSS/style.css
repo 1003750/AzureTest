@@ -4,6 +4,13 @@ body{
     margin-right: auto;
 }
 
+header {
+    display: flex;
+    display: -webkit-flex /*Safari*/
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 * {
     background-color: #CDB380;
 }
