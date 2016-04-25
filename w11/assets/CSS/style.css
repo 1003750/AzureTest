@@ -32,7 +32,9 @@ div > nav > ul >li {
     text-decoration: none;
     float: left;
 }
-
+div > nav {
+    display: block;
+}
 li a:hover{
     color: purple;
 }
