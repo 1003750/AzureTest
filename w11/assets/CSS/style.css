@@ -22,7 +22,7 @@ header {
 
 main {
     display: flex;
-    display: -webkit-flex /*Safari*/
+    display: -webkit-flex ;/*Safari*/
     flex-direction: row;
     justify-content: flex-start;
 }
