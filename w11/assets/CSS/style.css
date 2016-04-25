@@ -25,3 +25,8 @@ li a:hover{
     colour: purple;
 }
 
+/* IMAGE SIZING CSS */
+#logo
+{
+    width: 300px;
+}
