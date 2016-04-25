@@ -29,6 +29,7 @@ body{
 
 
 div > nav > ul >li {
+    display: block;
     text-decoration: none;
     float: left;
 }
