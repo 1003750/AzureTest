@@ -36,7 +36,7 @@ main {
 
 
 
-li {
+div > nav > ul >li {
     text-decoration: none;
     float: left;
 }
