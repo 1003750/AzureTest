@@ -7,3 +7,21 @@ body{
 * {
     background-color: #CDB380;
 }
+
+/* NAVIGATION BAR CSS */
+/*removes bullet points*/
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+li a:hover{
+    colour: purple;
+}
+
