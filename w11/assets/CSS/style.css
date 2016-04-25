@@ -4,14 +4,8 @@ body{
     margin-right: auto;
 }
 
-header {
-    background-color: #036564;
-
-    display: inline;
-}
-
 #heads{
-    margin-left: 20px;
+
     clear: both;
     display: inline;
 }
@@ -46,6 +40,7 @@ li a:hover{
 /* IMAGE SIZING CSS */
 #buglogo
 {
+    margin-right: 20px;
     float: left;
     width: 150px;
 }
