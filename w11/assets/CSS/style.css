@@ -25,6 +25,9 @@ header {
     clear: both;
     display: inline;
 }
+#h2inhead{
+    z-index: -1;
+}
 
 main {
     clear: both;
