@@ -64,7 +64,9 @@ p, h2, a{
     padding-right: 10px;
     text-align: justify;
     background-color: royalblue;
-    width: 80%;
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
