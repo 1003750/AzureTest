@@ -41,3 +41,12 @@ p, h2, a{
     font-family: 'Roboto', sans-serif;;
     font-wight: 400;
 }
+
+#content
+{
+    padding-top: 10px;
+    padidng-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
