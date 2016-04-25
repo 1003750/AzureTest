@@ -26,7 +26,18 @@ li a:hover{
 }
 
 /* IMAGE SIZING CSS */
-#logo
+#buglogo
 {
-    width: 300px;
+    width: 150px;
+}
+
+/* TEXT STYLING */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-wight: 300;
+}
+
+p, h2, a{
+    font-family: 'Roboto', sans-serif;;
+    font-wight: 400;
 }
