@@ -29,9 +29,12 @@ body{
 
 
 div > ul >li {
-    display: block;
+
     text-decoration: none;
     float: left;
+}
+div > ul >li >a{
+    display: block;
 }
 
 
