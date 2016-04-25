@@ -28,14 +28,13 @@ body{
 
 
 
-div > nav > ul >li {
+div > ul >li {
     display: block;
     text-decoration: none;
     float: left;
 }
-div > nav {
-    display: block;
-}
+
+
 li a:hover{
     color: purple;
 }
