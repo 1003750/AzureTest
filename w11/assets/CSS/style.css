@@ -6,10 +6,7 @@ body{
 
 header {
     background-color: #036564;
-    width: 70%
-    margin-left: auto;
-    margin-right: auto;
-    text-align: right;
+    text-align: left;
 }
 
 .header img {
