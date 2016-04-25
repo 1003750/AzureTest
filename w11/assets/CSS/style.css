@@ -10,24 +10,11 @@ header {
     display: inline;
 }
 
-.header img {
-    float: left;
-
-    top: 0;
-    left: 0;
-}
-.header h1, h2 {
-    position: relative;
-}
-
-
 #heads{
     clear: both;
     display: inline;
 }
-#h2inhead{
 
-}
 
 main {
     clear: both;
