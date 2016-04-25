@@ -20,6 +20,13 @@ header {
     position: relative;
 }
 
+header {
+    display: flex;
+    display: -webkit-flex ;/*Safari*/
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
 main {
     display: flex;
     display: -webkit-flex ;/*Safari*/
