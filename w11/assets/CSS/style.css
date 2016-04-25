@@ -26,6 +26,7 @@ header {
 }
 
 main {
+    clear: both;
     display: flex;
     display: -webkit-flex ;/*Safari*/
     flex-direction: row;
