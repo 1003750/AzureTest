@@ -7,6 +7,7 @@ body{
 header {
     background-color: #036564;
     text-align: left;
+    display: inline;
 }
 
 .header img {
@@ -36,14 +37,15 @@ main {
 {
     background-color: blue;
 }
-nav>ul {
-    list-style-type: none;
+nav>ul>{
+
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
 nav>ul>li {
+    text-decoration: none;
     float: left;
 }
 

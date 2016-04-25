@@ -7,8 +7,8 @@ $surname = $_GET["surname"];
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET')
 {
-   echo "Hello " . $name . " " . $surname;
+   foreach
+    echo "Hello " . $name . " " . $surname;
 }
-
 
 ?>
