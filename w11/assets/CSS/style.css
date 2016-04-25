@@ -5,7 +5,6 @@ body{
 }
 
 #heads{
-
     clear: both;
     display: inline;
 }
@@ -33,10 +32,25 @@ div > ul >li {
     text-decoration: none;
 }
 
-
 li a:hover{
     color: purple;
 }
+
+#nav {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#content
+{
+    text-align: justify;
+    background-color: royalblue;
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
 
 /* IMAGE SIZING CSS */
 #buglogo
@@ -57,18 +71,6 @@ p, h2, a{
     font-wight: 400;
 }
 
-#content
-{
-    padding-top: 10px;
-    padidng-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-    background-color: royalblue;
-    width: 70%;
-    margin-left: 20px;
-    margin-right: 20px;
-
-}
 
 
 /* FONT SIZING */
