@@ -32,10 +32,6 @@ div > ul >li {
     display: block;
     text-decoration: none;
 }
-div > ul >li >a{
-
-
-}
 
 
 li a:hover{
@@ -68,6 +64,8 @@ p, h2, a{
     padding-right: 10px;
     text-align: justify;
     background-color: royalblue;
+    width: 80%;
+
 }
 
 
