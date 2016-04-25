@@ -23,6 +23,7 @@ header {
 
 #heads{
     clear: both;
+    display: inline;
 }
 
 main {
