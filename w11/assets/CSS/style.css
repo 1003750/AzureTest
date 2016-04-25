@@ -55,6 +55,7 @@ li a:hover{
 /* IMAGE SIZING CSS */
 #buglogo
 {
+    float: left;
     width: 150px;
 }
 
