@@ -21,7 +21,9 @@ header {
 }
 
 
-
+#heads{
+    clear: both;
+}
 
 main {
     display: flex;
