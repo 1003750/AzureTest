@@ -1,61 +1,18 @@
-body{
-    max-width:960px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#heads{
-    clear: both;
-    display: inline;
-}
-
-
-main {
-    clear: both;
-    display: flex;
-    display: -webkit-flex ;/*Safari*/
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-body{
-    background-color: #CDB380;
-}
-
-/* NAVIGATION BAR CSS */
-/*removes bullet points*/
-
-
-
-div > ul >li {
-    display: block;
-    text-decoration: none;
-}
-
-li a:hover{
-    color: purple;
-}
-
-
-#content
-{
-    text-align: justify;
-    background-color: royalblue;
-    width: 70%;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-
-/* IMAGE SIZING CSS */
+/* GENERAL STYLING */
+/* image sizing */
 #buglogo
 {
     margin-right: 20px;
     float: left;
-    width: 150px;
+    width: 100px;
+}
+
+/*Setting width of page, margins and overall background colour*/
+body{
+    max-width:960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CDB380;
 }
 
 /* TEXT STYLING */
@@ -68,8 +25,7 @@ p, h2, a{
     font-family: 'Roboto', sans-serif;;
     font-wight: 400;
 }
-
-
+/* END OF TEXT STYLING */
 
 /* FONT SIZING */
 h1 {
@@ -84,3 +40,46 @@ p {
 a {
     font-size: 14px;
 }
+/* END OF FONT SIZING */
+
+
+/* Ensuring Page title is beside the logo*/
+#heads{
+    clear: both;
+    display: inline;
+}
+
+/* Adding grid layout to main section */
+main {
+    clear: both;
+    display: flex;
+    display: -webkit-flex ;/*Safari*/
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* NAVIGATION BAR CSS */
+/*removes bullet points*/
+div > ul >li {
+    display: block;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: purple;
+}
+ /* sets main textbox parameters */
+#content
+{
+    text-align: justify;
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
