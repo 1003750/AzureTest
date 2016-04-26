@@ -41,10 +41,7 @@ h1 {
 h2 {
     font-size: 18px;
 }
-p {
-    font-size: 14px;
-}
-a {
+h3, p, a {
     font-size: 14px;
 }
 /* END OF FONT SIZING */
