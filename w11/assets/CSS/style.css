@@ -4,7 +4,7 @@
 {
     margin-right: 20px;
     float: left;
-    width: 20%;
+    width: 10%;
 }
 
 /*Setting width of page, margins and overall background colour*/
@@ -12,7 +12,7 @@ body{
     max-width:960px;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: #CDB380;*/
+    background-color: #CDB380;
 }
 
 /* TEXT STYLING */
