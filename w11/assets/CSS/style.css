@@ -67,6 +67,11 @@ main {
 }
 
 /* NAVIGATION BAR CSS */
+/* sets width of navigation bar*/
+#nav{
+    width: 20%;
+}
+
 /*removes bullet points*/
 div > ul >li {
     display: block;
