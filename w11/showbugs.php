@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>BugTracker Website - Add Bugs</title>
+    <title>BugTracker Website</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
 
@@ -33,29 +33,24 @@
     </div>
     <!-- NAVIGATION BAR END -->
 
-    <!-- FORM START -->
-    <form>
-        <fieldset>
-            <label for="bugname">Bug Name</label>
-            <input type="text" name="bugname" required>
-            <br>
-            <label for="bugsummary">Bug Summary</label>
-            <textarea name="bugsummary" maxlength="500" required></textarea>
-            <br>
-            <label for="bugcategory">Bug Category</label>
-            <select name="bugcategory" required>
-                <option value="">Select Bug Category</option>
-                <option value="android">Android</option>
-                <option value="ios">iOS</option>
-                <option value="windows">Windows</option>
-            </select>
-
-            <br>
-            <input type="submit" value="Submit">
-
-        </fieldset>
-    </form>
-    <!-- FORM END -->
+    <!-- MAIN PARAGRAPH START -->
+    <div id = "showbugs">
+        <?php
+        include ("db_connect.php");
+        $sql_query = "SELECT * FROM bugs";
+        $result = $db->query($sql_query);
+        while($row = $result->fetch_array())
+        {
+            $bugName = $row['bugName'];
+            $BugCategory = $row['BugCategory'];
+            $BugSummary = $row['BugSummary'];
+            echo "<h3>{$bugName}</h3>";
+            echo "<h3>{$BugCategory}</h3>";
+            echo "<p>{$BugSummary}</p>";
+        }
+        ?>
+    </div>
+    <!-- MAIN PARAGRAPH END -->
 
 
 </Main>
@@ -64,8 +59,9 @@
 <!-- FOOTER START -->
 <Footer>
     <p>Designed by Rita Avota, 2016</p>
-</Footer>
+</Footer
 <!-- FOOTER END -->
 
 </body>
 </html>
+
