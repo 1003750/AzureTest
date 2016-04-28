@@ -110,7 +110,7 @@ hr {
     border-width: 1px;
 }
 
-/* form display */
+/* FORM DISPLAY START */
 
 label{
     display: inline-block;
@@ -123,4 +123,13 @@ label{
 input {
     display: inline-block;
     float: left;
+}
+
+/* FORM DISPLAY END */
+
+footer {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }

@@ -37,6 +37,28 @@
     <div id = "showbugs">
         <?php
         include ("db_connect.php");
+
+        if(isset($_GET['category'])) {
+            $BugCategory = $_GET['category'];
+            $sql_query = "SELECT * FROM bugs where BugCategory = '$BugCategory'";
+        }
+        else {
+            $sql_query = "SELECT * FROM bugs";
+        }
+
+        $result = $db->query($sql_query);
+        while($row = $result->fetch_array())
+        {
+            $bugName = $row['bugName'];
+            $BugCategory = $row['BugCategory'];
+            $BugSummary = $row['BugSummary'];
+            echo "<h3>{$bugName}</h3>";
+            echo "<h4>{$BugCategory}</h4>";
+            echo "<p>{$BugSummary}</p>";
+            echo "<hr>";
+        }
+
+        /*
         $sql_query = "SELECT * FROM bugs";
         $result = $db->query($sql_query);
         while($row = $result->fetch_array())
@@ -49,6 +71,8 @@
             echo "<p>{$BugSummary}</p>";
             echo "<hr>";
         }
+        */
+
         ?>
      </div>
     <!-- MAIN PARAGRAPH END -->
