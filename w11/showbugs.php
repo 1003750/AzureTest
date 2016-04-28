@@ -47,7 +47,7 @@
             echo "<h3>{$bugName}</h3>";
             echo "<h3><i>{$BugCategory}</i></h3>";
             echo "<p>{$BugSummary}</p>";
-            echo "<hr>"
+            echo "<hr>";
         }
         ?>
      </div>
