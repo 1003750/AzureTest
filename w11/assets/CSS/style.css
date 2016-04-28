@@ -51,7 +51,7 @@ h1 {
 h2 {
     font-size: 18px;
 }
-h3, p, a {
+h3, h4, p, a {
     font-size: 14px;
 }
 /* END OF FONT SIZING */
@@ -110,6 +110,17 @@ hr {
     border-width: 1px;
 }
 
+/* form display */
 
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+    text-align: right;
+}
 
-
+input {
+    display: inline-block;
+    float: left;
+}
