@@ -45,11 +45,11 @@
             $BugCategory = $row['BugCategory'];
             $BugSummary = $row['BugSummary'];
             echo "<h3>{$bugName}</h3>";
-            echo "<h3>{$BugCategory}</h3>";
+            echo "<h3 id="bugcategory">{$BugCategory}</h3>";
             echo "<p>{$BugSummary}</p>";
         }
         ?>
-    </div>
+     </div>
     <!-- MAIN PARAGRAPH END -->
 
 
