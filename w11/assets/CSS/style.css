@@ -33,9 +33,14 @@ p, h2, h3, a{
     padding-right: 10px;
 }
 
-#bugcategory {
+#showbugs h3 {
+    font-weight: bold;
+}
+
+#showbugs h4 {
     font-style: italic;
 }
+
 /* END OF TEXT STYLING */
 
 /* FONT SIZING */
