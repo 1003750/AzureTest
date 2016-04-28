@@ -63,6 +63,7 @@ main {
     display: -webkit-flex ;/*Safari*/
     flex-direction: row;
     justify-content: flex-start;
+    text-align: justify;
 }
 
 /* NAVIGATION BAR CSS */
@@ -83,7 +84,6 @@ li a:hover{
  /* sets main textbox parameters */
 #content
 {
-    text-align: justify;
     width: 70%;
     margin-left: 20px;
     margin-right: 20px;
