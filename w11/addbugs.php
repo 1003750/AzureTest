@@ -45,9 +45,9 @@
             <label for="BugCategory">Bug Category</label>
             <select name="BugCategory" required>
                 <option value="">Select Bug Category</option>
-                <option value="android">Android</option>
-                <option value="ios">iOS</option>
-                <option value="windows">Windows</option>
+                <option value="Android">Android</option>
+                <option value="iOS">iOS</option>
+                <option value="Windows">Windows</option>
             </select>
             <br>
             <input type="submit" value="Submit">
