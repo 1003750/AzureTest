@@ -18,15 +18,16 @@ body{
 /* TEXT STYLING */
 h1 {
     font-family: 'Roboto', sans-serif;
-    font-wight: 300;
+    font-weight: 300;
 }
 
 p, h2, h3, a{
     font-family: 'Roboto', sans-serif;;
-    font-wight: 400;
+    font-weight: 400;
 }
 #showbugs{
-    font-style: bold;
+    text-align: justify;
+    font-weight: bold;
     width: 80%;
 
 }
@@ -63,7 +64,6 @@ main {
     display: -webkit-flex ;/*Safari*/
     flex-direction: row;
     justify-content: flex-start;
-    text-align: justify;
 }
 
 /* NAVIGATION BAR CSS */
@@ -84,6 +84,7 @@ li a:hover{
  /* sets main textbox parameters */
 #content
 {
+    text-align: justify;
     width: 70%;
     margin-left: 20px;
     margin-right: 20px;
