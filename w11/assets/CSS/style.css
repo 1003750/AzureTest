@@ -19,9 +19,10 @@ body{
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-weight: bold;
 }
 
-p, h2, h3, a{
+p, h2, h3, h4, a{
     font-family: 'Roboto', sans-serif;;
     font-weight: 400;
 }

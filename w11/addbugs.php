@@ -34,22 +34,21 @@
     <!-- NAVIGATION BAR END -->
 
     <!-- FORM START -->
-    <form>
+    <form action="insertbug.php" method="post">
         <fieldset>
-            <label for="bugname">Bug Name</label>
-            <input type="text" name="bugname" required>
+            <label for="bugName">Bug Name</label>
+            <input type="text" name="bugName" required>
             <br>
-            <label for="bugsummary">Bug Summary</label>
-            <textarea name="bugsummary" maxlength="500" required></textarea>
+            <label for="BugSummary">Bug Summary</label>
+            <textarea name="BugSummary" maxlength="500" required></textarea>
             <br>
-            <label for="bugcategory">Bug Category</label>
-            <select name="bugcategory" required>
+            <label for="BugCategory">Bug Category</label>
+            <select name="BugCategory" required>
                 <option value="">Select Bug Category</option>
                 <option value="android">Android</option>
                 <option value="ios">iOS</option>
                 <option value="windows">Windows</option>
             </select>
-
             <br>
             <input type="submit" value="Submit">
 
