@@ -26,7 +26,6 @@ p, h2, h3, a{
     font-weight: 400;
 }
 #showbugs{
-    text-align: justify;
     font-weight: bold;
     width: 80%;
 
@@ -59,6 +58,7 @@ h3, p, a {
 /* Adding grid layout to main section
 This section ensures that in each page navigation bar is on the left side of the screen*/
 main {
+    text-align: justify;
     clear: both;
     display: flex;
     display: -webkit-flex ;/*Safari*/
@@ -84,7 +84,6 @@ li a:hover{
  /* sets main textbox parameters */
 #content
 {
-    text-align: justify;
     width: 70%;
     margin-left: 20px;
     margin-right: 20px;
