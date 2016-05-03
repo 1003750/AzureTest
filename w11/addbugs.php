@@ -35,6 +35,7 @@
 
     <!-- CONNECTION TO DATABASE -->
 
+    <section>
     <?php
         // include the connection to database
         include ("db_connect.php");
@@ -42,6 +43,7 @@
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // execute if requested using HTTP GET Method
             ?>
+
             <!-- FORM START -->
             <form action={$_SERVER['PHP_SELF']}" method="post">
                 <fieldset>
@@ -96,6 +98,7 @@
 
 
     ?>
+    </section>
 
 </Main>
 <!-- MAIN END -->
