@@ -33,38 +33,25 @@
 
         $form = <<<FORM
 
-				<form action="{$_SERVER['PHP_SELF']}" method="post">
+            <form action={$_SERVER['PHP_SELF']}" method="post">
+                <fieldset>
+                    <label for="bugName">Bug Name</label>
+                    <input type="text" name="bugName" required>
+                    <br>
+                    <label for="BugSummary">Bug Summary</label>
+                    <textarea name="BugSummary" maxlength="500" required></textarea>
+                    <br>
+                    <label for="BugCategory">Bug Category</label>
+                    <select name="BugCategory" required>
+                        <option value="">Select Bug Category</option>
+                        <option value="Android">Android</option>
+                        <option value="iOS">iOS</option>
+                        <option value="Windows">Windows</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Submit">
 
-                <table border="0" cellspacing="5" cellpadding="5">
-                    <tr>
-                         <td>Title</td>
-                         <td> <input type="text" name="title"> </td>
-                    </tr>
-                    <tr>
-                         <td>Synopsis</td>
-						 <td><textarea name="synopsis" id="synopsis"></textarea></td>
-                    </tr>
-                    <tr>
-                         <td>Genre</td>
-                         <td> <input type="text" name="genre"> </td>
-                    </tr>
-                    <tr>
-                         <td>Relesae</td>
-                         <td> <input type="text" name="release"> </td>
-                    </tr>
-                    <tr>
-                         <td>Score</td>
-                         <td> <input type="text" name="score"> </td>
-                    </tr>
-                    <tr>
-                         <td>Poster</td>
-                         <td> <input type="text" name="poster"> </td>
-                    </tr>
-                    	<td><input type="submit" name="submit" value="Submit"/>
-                        </td>
-                    <tr>
-               </table>
-
+                </fieldset>
             </form>
 FORM;
 
@@ -76,16 +63,13 @@ FORM;
     elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // execute if requested using HTTP POST Method
 
-        $title = $_POST["title"];
-        $synopsis = $_POST["synopsis"];
-        $genre = $_POST["genre"];
-        $release = $_POST["release"];
-        $score = $_POST["score"];
-        $poster = $_POST["poster"];
+        $bugName = $_POST['bugName'];
+        $BugCategory = $_POST['BugCategory'];
+        $BugSummary = $_POST['BugSummary'];
 
 
-        $sql = "INSERT INTO `movie` (`poster`, `title`, `synopsis`, `genre`, `release-date`, `score`) VALUES ('{$poster}', '{$title}', '{$synopsis}', '{$genre}', '{$release}', '{$score}');";
-
+        $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
+    }
 
         if ($result = $mysqli->query($sql)) {
             printf("New movie added");
@@ -98,7 +82,7 @@ FORM;
 
     }
     else {
-        header( 'Location: addmovie.php' ) ;
+        header( 'Location: testtest.php' ) ;
     }
 
     ?>
