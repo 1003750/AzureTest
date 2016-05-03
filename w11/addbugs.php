@@ -36,7 +36,7 @@
     <!-- CONNECTION TO DATABASE -->
 
 
-
+    <section>
     <?php
     // include the connection to database
     include ("db_connect.php");
@@ -44,7 +44,8 @@
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // execute if requested using HTTP GET Method
         ?>
-        <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>">
+
+        <form method="post" action="<?php $_SERVER['PHP_SELF'];?>">
             <fieldset>
                 <label for="bugName">Bug Name</label>
                 <input type="text" name="bugName" required>
@@ -74,10 +75,6 @@
         $BugSummary = $_POST['BugSummary'];
 
         $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
-    }
-
-    else {
-        header("location:addbugs.php");
     }
 
     ?>
