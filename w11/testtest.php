@@ -69,15 +69,16 @@ FORM;
 
 
         $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
-    }
+
 
         if ($result = $mysqli->query($sql)) {
-            printf("New movie added");
+            echo "New movie added";
         }
-        else printf("Couldn't add movie");
+        else {
+            echo "Couldn't add movie";
+        }
 
-
-        header( 'Location: index.html' ) ;
+        header('Location: index.html');
 
 
     }
@@ -91,7 +92,7 @@ FORM;
 </section>
 
 <footer id="PageFooter">
-    <p>Designed by: Inese Avota 2012</p>
+    <p>Designed by</p>
 </footer>
 
 </body>
