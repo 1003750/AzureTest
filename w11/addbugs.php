@@ -35,14 +35,25 @@
 
     <!-- CONNECTION TO DATABASE -->
 
+
+
     <section>
-    <?php
-        // include the connection to database
-        include ("db_connect.php");
+
+        <?php
+
+        $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net", "b8522d73b537a0", "b0f6819e", "slq654");
+
+        if ($mysqli->connect_errno) {
+            printf("Connect failed: %s\n", $mysqli->connect_error);
+            exit();
+        }
+
 
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             // execute if requested using HTTP GET Method
-            ?>
+
+            $form = <<<FORM
+
             <form action={$_SERVER['PHP_SELF']}" method="post">
                 <fieldset>
                     <label for="bugName">Bug Name</label>
@@ -63,24 +74,58 @@
 
                 </fieldset>
             </form>
-            <!-- FORM END -->
-            <?
+FORM;
+
+            print($form);
+
         }
 
+
         elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            // execute if requested using HTTP POST Method
+
             $bugName = $_POST['bugName'];
             $BugCategory = $_POST['BugCategory'];
             $BugSummary = $_POST['BugSummary'];
 
-            $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
-        }
 
+            $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
+
+
+            if ($result = $mysqli->query($sql)) {
+                echo "New movie added";
+            }
+            else {
+                echo "Couldn't add movie";
+            }
+
+            header("location:index.php");
+
+
+        }
         else {
             header("location:addbugs.php");
         }
 
-    ?>
+        ?>
+
+
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
