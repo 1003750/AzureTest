@@ -35,12 +35,19 @@
 
     <!-- CONNECTION TO DATABASE -->
 
+    <?php
+    include ("db_connect.php");
+    ?>
 
     <section>
     <?php
     // include the connection to database
-    include ("db_connect.php");
+    $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net","b8522d73b537a0","b0f6819e","slq654");
 
+    if ($mysqli->connect_errno) {
+        echo ("Connect failed: " . $mysqli->connect_error);
+        exit();
+    }
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // execute if requested using HTTP GET Method
         ?>
