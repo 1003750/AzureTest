@@ -79,12 +79,21 @@
             $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
 
             if (mysqli_query($db, $sql)) {
-            } else {
+                echo "New Bug added";
+            }
+            else {
                 echo "Error: " . $sql . "<br>" . mysqli_error($db);
             }
+
+            header("location:index.php");
         }
 
-        header("location:addbugs.php");
+        else {
+            header("location:addbugs.php");
+        }
+
+
+
 
     ?>
 
