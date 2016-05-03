@@ -41,10 +41,8 @@
         include ("db_connect.php");
 
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-        // execute if requested using HTTP GET Method
+            // execute if requested using HTTP GET Method
             ?>
-
-            <!-- FORM START -->
             <form action={$_SERVER['PHP_SELF']}" method="post">
                 <fieldset>
                     <label for="bugName">Bug Name</label>
@@ -69,36 +67,23 @@
             <?
         }
 
-
-
         elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            // execute if requested using HTTP POST Method
-
             $bugName = $_POST['bugName'];
             $BugCategory = $_POST['BugCategory'];
             $BugSummary = $_POST['BugSummary'];
 
             $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
-
-            if (mysqli_query($db, $sql)) {
-                echo "New Bug added";
-            }
-            else {
-                echo "Error: " . $sql . "<br>" . mysqli_error($db);
-            }
-
-            header("location:index.php");
         }
 
         else {
             header("location:addbugs.php");
         }
 
-
-
-
     ?>
     </section>
+
+
+
 
 </Main>
 <!-- MAIN END -->
