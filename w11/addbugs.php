@@ -74,7 +74,7 @@
 
         $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
 
-        if ($result = $mysqli->query($sql)) {
+        if ($result = $db->query($sql)) {
             printf("New bug added");
         }
         else printf("Couldn't add bug");
