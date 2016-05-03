@@ -78,12 +78,12 @@ FORM;
             echo "Couldn't add movie";
         }
 
-        header("location:index.php");
+        header("location:showbugs.php");
 
 
     }
     else {
-        header("location:addbugs.php");
+        header("location:index.php");
     }
 
     ?>
