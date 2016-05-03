@@ -34,15 +34,14 @@
     <!-- NAVIGATION BAR END -->
 
     <!-- CONNECTION TO DATABASE -->
-    <?php
-    include ("db_connect.php");
-    ?>
 
     <?php
+        include ("db_connect.php");
         // <!-- FORM START -->
 
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // execute if requested using HTTP GET Method
+            ?>
 
             <form action={$_SERVER['PHP_SELF']}" method="post">
                 <fieldset>
@@ -64,7 +63,7 @@
 
                 </fieldset>
             </form>
-
+    <?
         elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // execute if requested using HTTP POST Method
 
