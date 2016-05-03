@@ -44,7 +44,7 @@
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // execute if requested using HTTP GET Method
         ?>
-        <form action="<?php{$_SERVER['PHP_SELF']};?>" method="post">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
             <fieldset>
                 <label for="bugName">Bug Name</label>
                 <input type="text" name="bugName" required>
