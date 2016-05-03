@@ -79,7 +79,7 @@
         }
         else printf("Couldn't add bug");
 
-        header( 'Location: addbugs.php' ) ;
+        header( 'Location: showbugs.php' ) ;
     }
 
     else {
