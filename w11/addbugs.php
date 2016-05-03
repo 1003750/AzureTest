@@ -35,23 +35,15 @@
 
     <!-- CONNECTION TO DATABASE -->
 
-    <?php
-    include ("db_connect.php");
-    ?>
 
     <section>
     <?php
     // include the connection to database
-    $mysqli = new mysqli("eu-cdbr-azure-north-d.cloudapp.net","b8522d73b537a0","b0f6819e","slq654");
+    include ("db_connect.php");
 
-    if ($mysqli->connect_errno) {
-        echo ("Connect failed: " . $mysqli->connect_error);
-        exit();
-    }
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // execute if requested using HTTP GET Method
         ?>
-
         <form method="post" action="<?php $_SERVER['PHP_SELF'];?>">
             <fieldset>
                 <label for="bugName">Bug Name</label>
@@ -69,7 +61,6 @@
                 </select>
                 <br>
                 <input type="submit" value="Submit">
-
             </fieldset>
         </form>
         <!-- FORM END -->
@@ -82,6 +73,12 @@
         $BugSummary = $_POST['BugSummary'];
 
         $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
+
+        header( 'Location: addbugs.php' ) ;
+    }
+
+    else {
+        header("location:index.php");
     }
 
     ?>
