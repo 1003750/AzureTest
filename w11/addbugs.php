@@ -43,7 +43,7 @@
 
     if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // execute if requested using HTTP GET Method
-        ?>
+
         <form action="{$_SERVER['PHP_SELF']}" method="post">
             <fieldset>
                 <label for="bugName">Bug Name</label>
@@ -65,7 +65,7 @@
             </fieldset>
         </form>
         <!-- FORM END -->
-        <?
+
     }
 
     elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
