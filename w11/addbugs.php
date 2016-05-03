@@ -33,29 +33,56 @@
     </div>
     <!-- NAVIGATION BAR END -->
 
-    <!-- FORM START -->
-    <form action="insertbug.php" method="post">
-        <fieldset>
-            <label for="bugName">Bug Name</label>
-            <input type="text" name="bugName" required>
-            <br>
-            <label for="BugSummary">Bug Summary</label>
-            <textarea name="BugSummary" maxlength="500" required></textarea>
-            <br>
-            <label for="BugCategory">Bug Category</label>
-            <select name="BugCategory" required>
-                <option value="">Select Bug Category</option>
-                <option value="Android">Android</option>
-                <option value="iOS">iOS</option>
-                <option value="Windows">Windows</option>
-            </select>
-            <br>
-            <input type="submit" value="Submit">
+    <!-- CONNECTION TO DATABASE -->
+    <?php
+    include ("db_connect.php");
+    ?>
 
-        </fieldset>
-    </form>
-    <!-- FORM END -->
+    <?php
+        // <!-- FORM START -->
 
+        if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+        // execute if requested using HTTP GET Method
+
+            <form action={$_SERVER['PHP_SELF']}" method="post">
+                <fieldset>
+                    <label for="bugName">Bug Name</label>
+                    <input type="text" name="bugName" required>
+                    <br>
+                    <label for="BugSummary">Bug Summary</label>
+                    <textarea name="BugSummary" maxlength="500" required></textarea>
+                    <br>
+                    <label for="BugCategory">Bug Category</label>
+                    <select name="BugCategory" required>
+                        <option value="">Select Bug Category</option>
+                        <option value="Android">Android</option>
+                        <option value="iOS">iOS</option>
+                        <option value="Windows">Windows</option>
+                    </select>
+                    <br>
+                    <input type="submit" value="Submit">
+
+                </fieldset>
+            </form>
+
+        elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                // execute if requested using HTTP POST Method
+
+            $bugName = $_POST['bugName'];
+            $BugCategory = $_POST['BugCategory'];
+            $BugSummary = $_POST['BugSummary'];
+
+            $sql = "INSERT INTO bugs (bugName, BugCategory, BugSummary) VALUES ('$bugName', '$BugCategory', '$BugSummary')";
+
+            if (mysqli_query($db, $sql)) {
+        }
+        else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($db);
+        }
+
+        header("location:showbugs.php");
+        <!-- FORM END -->
+    ?>
 
 </Main>
 <!-- MAIN END -->
