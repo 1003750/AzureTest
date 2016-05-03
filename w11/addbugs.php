@@ -84,7 +84,7 @@
             }
         }
 
-        header("location:showbugs.php");
+        header("location:addbugs.php");
 
     ?>
 
